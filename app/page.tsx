@@ -1,6 +1,15 @@
-import React from 'react'
+"use client"; // This directive tells Next.js this is a client component
+
+import React from 'react';
+import { useRouter } from 'next/navigation';
+
 
 function page() {
+  const router=useRouter();
+  const signin=()=>{
+    console.log("Signin up page");
+    router.push("/signup");
+  }
   return (
     <div className='flex lg:flex-row flex-col justify-center gap-10'>
       <div className='h-48 w-48 flex mt-36 mr-72'>
@@ -33,7 +42,10 @@ function page() {
           </div>
           <button type="submit" className='bg-[#71BF51] rounded-lg text-white p-2 mt-8'>Login</button>
         </form>
-        <p className='mt-12'>Didn’t  have an account? <span><a href="">Register Now</a></span></p>
+        <p className="mt-12">
+            Didn’t have an account? 
+            <button onClick={signin} className=" ml-1">Register Now</button>
+          </p>
       </div>
       </div>
      
