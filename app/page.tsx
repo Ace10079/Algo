@@ -1,95 +1,44 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import React from 'react'
 
-export default function Home() {
+function page() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
+    <div className='flex lg:flex-row flex-col justify-center gap-10'>
+      <div className='h-48 w-48 flex mt-36 mr-72'>
+        <img src="/next.svg" alt="Next.js logo" />
+      </div>
+      <div className='flex flex-col mt-16 border-solid border-2 border-black rounded-lg'>
+      <div className='ml-20 mr-20 mt-10 mb-10 '>
+        <h2 className='text-2xl mb-4 text-black font-bold'>Login</h2>
+        <form className='flex flex-col gap-4 '>
+          <div>
+            <input 
+              type="text" 
+              id="phone" 
+              name="phone" 
+              placeholder="Enter phone number"
+              className='border border-gray-300 rounded-lg py-2 px-6 w-full' 
             />
-          </a>
-        </div>
+          </div>
+          <div>
+            <input 
+              type="password" 
+              id="password" 
+              name="password" 
+              placeholder="Password"
+              className='border border-gray-300 rounded-lg py-2 px-6 w-full' 
+            />
+            <div className='text-right mt-2'>
+              <a href="#" className='text-blue-500'>Forgot Password?</a>
+            </div>
+          </div>
+          <button type="submit" className='bg-[#71BF51] rounded-lg text-white p-2 mt-8'>Login</button>
+        </form>
+        <p className='mt-12'>Didn’t  have an account? <span><a href="">Register Now</a></span></p>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
       </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  );
+     
+    </div>
+  )
 }
+
+export default page
