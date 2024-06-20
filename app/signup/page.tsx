@@ -73,7 +73,7 @@ function page() {
               </div>
               <button
                 type="submit"
-                className="bg-[#71BF51] rounded-lg text-white p-2 mt-2"
+                className="bg-gradient-to-r from-emerald-600 via-green-500 to-emerald-400 rounded-lg text-white p-2 mt-2"
               >
                 Signup
               </button>
