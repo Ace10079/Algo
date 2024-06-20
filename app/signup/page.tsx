@@ -1,8 +1,9 @@
 "use client";
 import React from "react";
 import { useRouter } from "next/navigation";
+import Image from 'next/image';
 
-function page() {
+function Page() {
   const router = useRouter();
   const dashboard = () => {
     console.log("Signin up page");
@@ -68,7 +69,7 @@ function page() {
                   className="mr-2"
                 />
                 <label htmlFor="terms" className="text-gray-700">
-                I agree all Terms & Conditions and privacy policy
+                  I agree all Terms & Conditions and privacy policy
                 </label>
               </div>
               <button
@@ -89,10 +90,10 @@ function page() {
       </div>
 
       <div className="h-48 w-48 flex mt-36 ml-36">
-        <img src="/next.svg" alt="Next.js logo" />
+        <Image src="/next.svg" alt="Next.js logo" width={192} height={192} />
       </div>
     </div>
   );
 }
 
-export default page;
+export default Page;

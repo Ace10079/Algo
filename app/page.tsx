@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { useRouter } from 'next/navigation';
+import Image from 'next/image';
 
 function Page() {
   const router = useRouter();
@@ -19,7 +20,7 @@ function Page() {
   return (
     <div className='flex lg:flex-row flex-col justify-center gap-10'>
       <div className='h-48 w-48 flex mt-36 mr-72'>
-        <img src="/next.svg" alt="Next.js logo" />
+        <Image src="/next.svg" alt="Next.js logo" width={192} height={192} />
       </div>
       <div className='flex flex-col mt-16 border-solid border-2 border-black rounded-lg'>
         <div className='ml-20 mr-20 mt-10 mb-10 '>
