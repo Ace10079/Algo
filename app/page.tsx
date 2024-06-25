@@ -1,5 +1,5 @@
 "use client"; // This directive tells Next.js this is a client component
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
@@ -19,8 +19,8 @@ function Page() {
 
   return (
     <div className='flex lg:flex-row flex-col justify-center gap-10'>
-      <div className='h-48 w-48 flex mt-36 mr-72'>
-        <Image src="/next.svg" alt="Next.js logo" width={192} height={192} />
+      <div className='h-72 w-76 flex mt-36 mr-64'>
+        <Image src="/demo1.png" alt="Next.js logo" width={250} height={250} />
       </div>
       <div className='flex flex-col mt-16 border-solid border-2 border-black rounded-lg'>
         <div className='ml-20 mr-20 mt-10 mb-10 '>

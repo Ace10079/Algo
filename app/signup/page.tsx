@@ -89,8 +89,8 @@ function Page() {
         </div>
       </div>
 
-      <div className="h-48 w-48 flex mt-36 ml-36">
-        <Image src="/next.svg" alt="Next.js logo" width={192} height={192} />
+      <div className="h-72 w-76 flex mt-36 ml-36">
+      <Image src="/demo1.png" alt="Next.js logo" width={250} height={250} />
       </div>
     </div>
   );
